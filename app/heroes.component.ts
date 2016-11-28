@@ -15,7 +15,6 @@ export class HeroesComponent implements OnInit {
 	selectedHero: Hero;
 	heroes: Hero[];
 
-
 	constructor(private heroService: HeroService,
 		private router: Router) { }
 
@@ -44,6 +43,11 @@ export class HeroesComponent implements OnInit {
 				this.heroes.push(hero);
 				this.selectedHero = null;
 			});
+	}
+
+	pushHero(hero: Hero): void {
+		console.log("pushHero method");
+		this.heroes.push(hero);
 	}
 
 	delete(hero: Hero): void {

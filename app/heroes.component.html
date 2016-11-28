@@ -12,7 +12,7 @@
     Add
   </button>
 </div>
-<hero-form></hero-form>
+<hero-form [heroesList]="heroes"></hero-form>
 <div *ngIf="selectedHero">
   <h2>
     {{selectedHero.name | uppercase}} is my hero
