@@ -19,5 +19,10 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.heroService.getHeroes()
       .then(heroes => this.heroes = heroes.slice(1, 5));
+
+    // let myHero = new Hero(42, 'SkyDog',
+    //   'Fetch any object at any distance',
+    //   'Leslie Rollover');
+    // console.log('My hero is called ' + myHero.name); // "My hero is called SkyDog"
   }
 }
