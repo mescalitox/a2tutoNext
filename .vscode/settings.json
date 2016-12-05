@@ -2,5 +2,14 @@
 {
   "typescript.tsdk": "./node_modules/typescript/lib",
   "editor.formatOnSave": true,
-  "beautify.onSave": ["css"]
+  "beautify.onSave": ["css"],
+
+  "files.exclude": {
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": {
+      "when": "$(basename)"
+    }
+  }
 }
