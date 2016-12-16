@@ -19,6 +19,10 @@ import { HeroSearchComponent } from './hero-search.component';
 import { HeroFormComponent } from './hero-form.component';
 import { WikiComponent } from './wiki.component';
 import { HeroBirthday2Component } from './hero-birthday2.component';
+import { VersionParentComponent } from './version-parent.component';
+import { VersionChildComponent } from './version-child.component';
+import { MissionControlComponent } from './mission-control.component';
+import { AstronautComponent } from './astronaut.component';
 
 
 @NgModule({
@@ -38,7 +42,11 @@ import { HeroBirthday2Component } from './hero-birthday2.component';
     HeroSearchComponent,
     HeroFormComponent,
     WikiComponent,
-    HeroBirthday2Component
+    HeroBirthday2Component,
+    VersionParentComponent,
+    VersionChildComponent,
+    MissionControlComponent,
+    AstronautComponent
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]
